@@ -1,0 +1,18 @@
+<html>
+<body>
+    <form>
+        Base: <input type="text" id="primeiroFator" /><br>
+        Altura: <input type="text" id="segundoFator" /><br>
+        <input type="button" onClick="calculaArea()" Value="Calcular" /><br>
+    </form>
+    <p> Resultado: <br> <span id = "resultado"></span> </p>  
+    <script>
+        function calculaArea()
+        {
+            num1 = document.getElementById("primeiroFator").value;
+            num2 = document.getElementById("segundoFator").value;
+            document.getElementById("resultado").innerHTML = num1 * num2;
+        }
+    </script>
+</body>  
+</html>
